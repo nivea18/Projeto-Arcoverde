@@ -2,21 +2,21 @@ import { useEffect, useState } from 'react';
 
 const slides = [
   {
-    image: '/arcoverde-alto-cruzeiro.jpeg',
+    image: `${import.meta.env.BASE_URL}arcoverde-alto-cruzeiro.jpeg`,
     alt: 'Encontro cultural ao pôr do sol no Alto do Cruzeiro, em Arcoverde',
     caption: 'Alto do Cruzeiro',
     detail: 'Cidade, cultura e comunidade',
     source: 'https://www.arcoverde.pe.gov.br/noticias/7365/dia-das-maes-e-celebrado-com-musica-e-poesia-em-arcoverde',
   },
   {
-    image: '/arcoverde-sao-joao.jpeg',
+    image: `${import.meta.env.BASE_URL}arcoverde-sao-joao.jpeg`,
     alt: 'Rua decorada para as celebrações juninas de Arcoverde',
     caption: 'Tradição que movimenta a cidade',
     detail: 'Uma paisagem urbana de Arcoverde',
     source: 'https://www.arcoverde.pe.gov.br/noticias/7433/justica-federal-nega-pedido-de-suspensao-das-obras-e-eventos-no-patio-ferroviario-de-arcoverde',
   },
   {
-    image: '/arcoverde-cinema.jpeg',
+    image: `${import.meta.env.BASE_URL}arcoverde-cinema.jpeg`,
     alt: 'Fachada histórica do Cinema Rio Branco, patrimônio cultural de Arcoverde',
     caption: 'Memória e identidade local',
     detail: 'Cinema Rio Branco',

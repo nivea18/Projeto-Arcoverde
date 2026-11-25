@@ -9,7 +9,7 @@ export function Header({ activeTab, setActiveTab }) {
     <header className="site-header">
       <div className="header-container">
         <button className="brand" onClick={() => navigate('home')} aria-label="Arcoverde Conecta, início">
-          <span className="brand-mark"><img src="/logo-arcoverde.jpeg" alt="" /></span>
+          <span className="brand-mark"><img src={`${import.meta.env.BASE_URL}logo-arcoverde.jpeg`} alt="" /></span>
           <span className="brand-copy"><strong>arcoverde<span>conecta</span></strong><small>GESTÃO DE SERVIÇOS PÚBLICOS</small></span>
         </button>
         <button className="menu-toggle" onClick={() => setMenuOpen((open) => !open)} aria-expanded={menuOpen} aria-label={menuOpen ? 'Fechar navegação' : 'Abrir navegação'}><span /><span /><span /></button>

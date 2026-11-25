@@ -34,7 +34,7 @@ export function Home({ demands, metrics, onOpenDemand, onNavigate }) {
         <p>Organize solicitações, acompanhe os serviços e ajude as equipes a priorizar o que mais importa.</p>
         <div className="hero-actions"><button className="hero-button" onClick={() => onNavigate('demands')}>Acompanhar demandas <span>→</span></button><button className="hero-link" onClick={() => onNavigate('new')}>＋ Nova solicitação</button></div>
       </div>
-      <div className="hero-logo-card"><img src="/logo-arcoverde.jpeg" alt="Prefeitura de Arcoverde — Cidade forte novamente" /></div>
+      <div className="hero-logo-card"><img src={`${import.meta.env.BASE_URL}logo-arcoverde.jpeg`} alt="Prefeitura de Arcoverde — Cidade forte novamente" /></div>
       <span className="hero-credit">UMA REDE DE CUIDADO PARA A CIDADE</span>
     </section>
 

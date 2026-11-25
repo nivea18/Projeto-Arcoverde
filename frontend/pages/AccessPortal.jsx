@@ -3,7 +3,7 @@ import { api } from '../src/api.js';
 import './AccessPortal.css';
 
 function AccessFrame({ title, subtitle, onBack, children }) {
-  return <section className="access-frame"><button className="access-back" type="button" onClick={onBack}>← Voltar</button><div className="access-brand-mark"><img src="/logo-arcoverde.jpeg" alt="" /></div><span className="eyebrow">ARCOVERDE CONECTA · ACESSO</span><h1>{title}</h1><p className="access-subtitle">{subtitle}</p>{children}</section>;
+  return <section className="access-frame"><button className="access-back" type="button" onClick={onBack}>← Voltar</button><div className="access-brand-mark"><img src={`${import.meta.env.BASE_URL}logo-arcoverde.jpeg`} alt="" /></div><span className="eyebrow">ARCOVERDE CONECTA · ACESSO</span><h1>{title}</h1><p className="access-subtitle">{subtitle}</p>{children}</section>;
 }
 
 export function AccessPortal({ onAuthenticated }) {
